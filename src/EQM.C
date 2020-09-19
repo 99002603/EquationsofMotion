@@ -1,5 +1,6 @@
 #include"EQM.h"
 #include <stdio.h>
+#include<math.h>
 float EQ1()
 {
     char temp;
