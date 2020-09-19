@@ -30,14 +30,14 @@ float EQ1()
     }
    else if(temp=='T'||temp=='t')
     {
-       float V,U,A,T;
+       float V,U,A;
        printf("Enter the value of initial Velocity");
        scanf("%f",&U);
        printf("Enter the value of Acceleration");
        scanf("%f",&A);
        printf("Enter the value of Final Velocity");
        scanf("%f",&V);
-       return (V-U)/T;
+       return (V-U)/A;
     }
     else if(temp=='a'||temp=='A')
     {
@@ -63,22 +63,22 @@ float EQ2()
     {
        float S,U,A,T;
        printf("Enter the value of initial Velocity");
-       scanf("%d",&U);
+       scanf("%f",&U);
        printf("Enter the value of Acceleration");
-       scanf("%d",&A);
+       scanf("%f",&A);
        printf("Enter the value of Time");
-       scanf("%d",&T);
+       scanf("%f",&T);
        return U*T+0.5*A*T*T;
     }
    else if(temp=='u'||temp=='U')
     {
        float S,U,A,T;
        printf("Enter the value of Distance");
-       scanf("%d",&S);
+       scanf("%f",&S);
        printf("Enter the value of Acceleration");
-       scanf("%d",&A);
+       scanf("%f",&A);
        printf("Enter the value of Time");
-       scanf("%d",&T);
+       scanf("%f",&T);
        U=(S-0.5*A*T*T);
        return U/T;
     }
@@ -104,7 +104,7 @@ float EQ2()
        scanf("%f",&S);
        printf("Enter the value of Final velocity");
        scanf("%f",&V);
-       //temp2=(S-0.5(V-U))/U;
+       temp2=(S-0.5*(V-U))/U;
        return temp2;
     }
 
@@ -129,7 +129,7 @@ float EQ3()
     }
    else if(temp=='u'||temp=='U')
     {
-       int V,U,A,S;
+       float V,U,A,S;
        printf("Enter the value of Final Velocity");
        scanf("%f",&V);
        printf("Enter the value of Acceleration");
